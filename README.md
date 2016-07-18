@@ -1,5 +1,7 @@
 # HeartBank Web Application
 
+[![Join the chat at https://gitter.im/heartbank/family.heartbank.org](https://badges.gitter.im/heartbank/family.heartbank.org.svg)](https://gitter.im/heartbank/family.heartbank.org?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Requirements
 
 For development, you will only need Node.js installed on your environment.
