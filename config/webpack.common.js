@@ -13,8 +13,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    'app': helpers.root('src'),
-    'vendor': Object.keys(pkg.dependencies)
+    'app': [helpers.root('src'), 'bootstrap-loader'],
+    'vendor': Object.keys(pkg.dependencies).filter(dep => !dep.includes('bootstrap'))
   },
 
   resolve: {
@@ -28,7 +28,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.jsx?$/, loaders: ['babel?cacheDirectory'], include: helpers.root('src') },
-      { test: /\.scss$/, loaders: ['style', 'css', 'postcss', 'sass'], include: helpers.root('src') },
+      { test: /\.scss$/, loader: ExtractTextPlugin.extract('style', 'css', 'postcss', 'sass'), include: helpers.root('src') },
       { test: /\.ejs$/, loader: 'ejs', include: helpers.root('src', 'template') }
     ]
   },
