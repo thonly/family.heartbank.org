@@ -2,10 +2,6 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 
-// Using Material UI: http://www.material-ui.com
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import injectTapEventPlugin from 'react-tap-event-plugin'; injectTapEventPlugin();
-
 import configureStore from './redux/store';
 
 import {
@@ -16,9 +12,7 @@ import {
 const store = configureStore();
 
 const component = (
-  <MuiThemeProvider>
-    <App />
-  </MuiThemeProvider>
+  <App />
 );
 
 const hook = 'app';
