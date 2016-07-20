@@ -62,11 +62,11 @@ styles:
   reboot: true
   type: true
   images: true
-  code: true
+  # code: true
   grid: true
   # tables: true
   # forms: true
-  buttons: true
+  # buttons: true
 
   # Components
   # animation: true
