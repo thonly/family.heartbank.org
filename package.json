@@ -6,7 +6,8 @@
     "start": "better-npm-run start",
     "build": "rimraf dist && better-npm-run build && gulp generate-service-worker",
     "prod": "better-npm-run prod",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "validate": "npm ls"
   },
   "betterScripts": {
     "start": {
