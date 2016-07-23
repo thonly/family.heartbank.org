@@ -11,8 +11,6 @@ app.get('*', function(req, res) {
   res.redirect('/');
 });
 
-// Change port and hostname to hosting service
-var port = 3000;
-var hostname = 'localhost'
-
-app.listen(port, hostname);
+app.listen(process.env.PORT || '3000', function() {
+  console.log('App listening on port %s', server.address().port);
+});
