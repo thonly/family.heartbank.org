@@ -23,7 +23,7 @@ below.
 ## Install
 
     $ git clone https://github.com/HeartBank/family.heartbank.org.git
-    $ cd Web
+    $ cd family.heartbank.org
     $ npm install
 
 ### JavaScript
