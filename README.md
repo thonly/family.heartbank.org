@@ -22,7 +22,7 @@ below.
 
 ## Install
 
-    $ git clone https://github.com/heartbank/Web.git
+    $ git clone https://github.com/HeartBank/family.heartbank.org.git
     $ cd Web
     $ npm install
 
